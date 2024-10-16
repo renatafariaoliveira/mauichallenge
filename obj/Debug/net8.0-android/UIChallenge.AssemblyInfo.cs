@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UIChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9bf9aea89bb5b47f5601a47bed59efc6d7057d83")]
 [assembly: System.Reflection.AssemblyProductAttribute("UIChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UIChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

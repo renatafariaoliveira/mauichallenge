@@ -1055,3 +1055,4 @@
 /Users/renatafariaoliveira/Development/Estudos/UIChallenge/obj/Debug/net8.0-android/resizetizer/f/Nunito-Bold.ttf
 /Users/renatafariaoliveira/Development/Estudos/UIChallenge/obj/Debug/net8.0-android/resizetizer/f/Nunito-Medium.ttf
 /Users/renatafariaoliveira/Development/Estudos/UIChallenge/obj/Debug/net8.0-android/resizetizer/f/Nunito-Regular.ttf
+/Users/renatafariaoliveira/Development/Estudos/UIChallenge/obj/Debug/net8.0-android/UIChallenge.sourcelink.json
