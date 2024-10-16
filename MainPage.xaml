@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="git init.MainPage">
+
+            <!-- Margin defined by four distinct values that are applied to the left, top, right, and bottom. -->  
+
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand" Padding="24" BackgroundColor="Black" RowDefinitions="0.5*,*,*,*" ColumnDefinitions="*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="Start">
+
+            <!-- Row 0 -->
+            <!-- Header/Welcome -->
+            <FlexLayout JustifyContent="SpaceBetween" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Morning, " TextColor="White" FontSize="28" FontAttributes="Bold" FontFamily="Nunito"/>
+                            <Span Text="{x:Static system:Environment.NewLine}"/>
+                            <Span Text="Renata" TextColor="White" FontSize="28" FontAttributes="Bold" FontFamily="Nunito"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image Source="menu.png" WidthRequest="32" HeightRequest="32" />
+            </FlexLayout>
+
+            <!-- Row 1-->
+            <!-- Welcome -->
+            <Frame BackgroundColor="#404040" Margin="0,0,5,5" Grid.Row="1" Grid.Column="0" CornerRadius="14">
+                <FlexLayout JustifyContent="SpaceBetween">
+                    <Grid VerticalOptions="Center" RowDefinitions="*,*" ColumnDefinitions="*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="Start">
+                        <!-- Row 1 -->
+                        <Frame Grid.Row="0" Grid.Column="0" Margin="0,0,4,0" CornerRadius="99" BackgroundColor="#FFF">
+                            <Image Source="avatar.png" WidthRequest="32" HeightRequest="32" />
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" Margin="4,0,0,0" CornerRadius="99" BackgroundColor="#606060">
+                            <Image Source="shutdown.png" WidthRequest="32" HeightRequest="32" />
+                        </Frame>
+                        
+                        <!-- Row 2 -->
+                        <FlexLayout JustifyContent="SpaceBetween" Margin="0,10,0,0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Welcome to" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="Nunito"/>
+                                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                                        <Span Text="Renata Room" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="Nunito"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </FlexLayout>
+                    </Grid>
+                </FlexLayout>
+            </Frame>
+
+            <!-- Security -->
+            <Frame BackgroundColor="#b2ff66" Margin="5,0,0,5" Grid.Row="1" Grid.Column="1" CornerRadius="14">
+                <FlexLayout JustifyContent="SpaceBetween">
+                    <Grid VerticalOptions="Fill" RowDefinitions="*,*,*" ColumnDefinitions="*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="Start">
+                        <!-- Row 1 -->
+                        <Frame Grid.Row="0" Grid.Column="0" CornerRadius="99" BackgroundColor="#66CC00">
+                            <Image Source="locker.png" WidthRequest="32" HeightRequest="32" />
+                        </Frame>
+                        
+                        <!-- Row 2 -->
+                        <FlexLayout JustifyContent="SpaceBetween" Margin="0, 10, 0, 0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Security" FontSize="20" FontFamily="Nunito" FontAttributes="Bold"/>
+                                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                                        <Span Text="24/7 System On" FontSize="18" FontFamily="Nunito"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </FlexLayout>
+
+                         <!-- Row 3 -->
+                        <FlexLayout JustifyContent="End" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                            <Switch IsToggled="false" OnColor="#66CC00" ThumbColor="White"/>
+                        </FlexLayout>
+                    </Grid>
+                </FlexLayout>
+            </Frame>
+           
+            <!-- Row 2 -->
+            <!-- Air Conditioner -->
+            <Frame BackgroundColor="#FFFF00" Margin="0,5,0,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="14">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand">
+                    <!-- Row 1 -->
+                    <FlexLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
+                        <Label Text="Air Conditioner" FontSize="24" FontFamily="Nunito"/>
+                    </FlexLayout>
+                    <Frame Grid.Row="0" Grid.Column="2" CornerRadius="99" Margin="0, 0, 0, 4" BackgroundColor="#000">
+                        <Image Source="up.png" WidthRequest="32" HeightRequest="32" />
+                    </Frame>
+
+                    <!-- Row 2 -->
+                    <FlexLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+                        <Label Text="28°C" FontSize="48" FontFamily="Nunito" FontAttributes="Bold" />
+                    </FlexLayout>
+                    <Frame Grid.Row="1" Grid.Column="2" CornerRadius="99" Margin="0, 4, 0, 0" BackgroundColor="#FFF">
+                        <Image Source="down.png" WidthRequest="32" HeightRequest="32" />
+                    </Frame>
+                        
+                    <!-- Row 2 -->
+                    <FlexLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                       <Switch IsToggled="false" OnColor="#CCCC00" ThumbColor="White"/>
+                    </FlexLayout>
+                </Grid>
+            </Frame>
+        
+            <!-- Row 3 -->
+            <!-- Room Lights -->
+            <Frame BackgroundColor="#404040" Margin="0,5,5,0" Grid.Row="3" Grid.Column="0" CornerRadius="14">
+                <FlexLayout JustifyContent="SpaceBetween">
+                    <Grid VerticalOptions="Center" RowDefinitions="*,*,*" ColumnDefinitions="*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="Start">
+                        <!-- Row 1 -->
+                        <Frame CornerRadius="99" BackgroundColor="#606060" Grid.Row="0" Grid.Column="0">
+                            <Image Source="bulb.png" WidthRequest="32" HeightRequest="32" />
+                        </Frame>
+
+                        <FlexLayout JustifyContent="SpaceBetween" Margin="0, 10, 0, 0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+                           <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Room Lights" FontSize="18" FontFamily="Nunito" TextColor="White"/>
+                                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                                        <Span Text="OFF - 30 min" FontSize="18" FontFamily="Nunito" TextColor="White"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </FlexLayout>
+                        
+                        <!-- Row 2 -->
+                        <FlexLayout JustifyContent="End" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4">
+                           <Switch IsToggled="false" OnColor="#000" ThumbColor="White"/>
+                        </FlexLayout>
+                    </Grid>
+                </FlexLayout>
+            </Frame>
+            
+            <!-- Controls -->
+            <Frame BackgroundColor="#404040" Margin="5,5,0,0" Grid.Row="3" Grid.Column="1" CornerRadius="14">
+                <Grid VerticalOptions="Center" RowDefinitions="*,*" ColumnDefinitions="*,*" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="Start">
+                    <Frame Grid.Row="0" Grid.Column="0" Margin="6,6" CornerRadius="99" BackgroundColor="#606060">
+                        <Image Source="fire.png" WidthRequest="32" HeightRequest="32" />
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" Margin="6,6" CornerRadius="99" BackgroundColor="#b2ff66">
+                        <Image Source="wireless.png" WidthRequest="32" HeightRequest="32" />
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="0" Margin="6,6" CornerRadius="99" BackgroundColor="#606060">
+                        <Image Source="tv.png" WidthRequest="32" HeightRequest="32"/>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" Margin="6,6" CornerRadius="99" BackgroundColor="#606060">
+                        <Image Source="dog.png" WidthRequest="32" HeightRequest="32" />
+                    </Frame>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

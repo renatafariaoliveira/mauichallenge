@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/renatafariaoliveira/Development/Estudos/UIChallenge/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/renatafariaoliveira/Development/Estudos/UIChallenge/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/UIChallenge.app
